@@ -1,0 +1,9 @@
+--- # s/w installation
+- hosts: webservers
+  #become: yes
+
+  tasks:
+    - name: install docker s/w into hosts
+      yum:
+        name: docker
+        state: present

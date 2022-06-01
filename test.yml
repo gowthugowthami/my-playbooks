@@ -1,0 +1,11 @@
+--- # this is my test playbook
+- hosts: webservers
+
+  tasks:
+    - name: Installing tree software on webservers
+      action: yum pkg=tree state=installed
+
+
+    - name: Installing mysql software on dbservers
+      action: yum pkg=mysql state=present/latest
+

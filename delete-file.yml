@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+    - name: deleting a file
+      file:
+        path: /home/ansible/projectworkfile1
+        state: absent
